@@ -167,6 +167,43 @@ article p {
     margin: 0;
 }
 
+/* Sökruta i navigationen */
+.search-item {
+    display: flex;
+    align-items: center;
+}
+
+/* Form-ramar i samma stil som knapparna */
+.search-form {
+    display: flex;
+    border: 3px solid #2F7CE1;
+    border-radius: 4px;
+    background: white;
+    overflow: hidden;
+}
+
+.search-form input {
+    border: none;
+    padding: 8px 10px;
+    font-size: 14px;
+    outline: none;
+    width: 140px;
+}
+
+.search-form button {
+    border: none;
+    background: #2F7CE1;
+    color: white;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.search-form button:hover {
+    background: #1a53a5;
+}
+
+
 /* ============================
    FOOTER
 ============================ */
