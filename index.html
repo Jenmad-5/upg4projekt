@@ -8,67 +8,70 @@
 </head>
 
 <body>
-    <header id="huvud-del" class="huvud-container">
-        <!--klickbar logo-->
-        <a href="index.html" class="logo">
-            <img src="images/logo.png" alt="FurEverHome logotyp">
-        </a>
+<header class="header">
+    
+    <!-- LOGO -->
+    <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="FurEverHome logotyp">
+    </a>
 
-        <!--språkval-->
-        <nav aria-label="Välj språk" class="sprakval">
-            <a href="#">English</a>
-        </nav>
+    <!-- SPRÅKVAL -->
+    <nav class="lang">
+        <a href="#">English</a>
+    </nav>
 
-        <!--huvudrubrik med slogan-->
-        <section class="huvudrubrik">
-            <h1>FurEverHome</h1>
-            <p>A second chance, a forever home</p>
-        </section>
-        <!--huvudnavigation med rullgardinsmeny-->
-        <nav class="huvudmeny" aria-label="huvudmeny">
-            <ul>
-                <li><a href="#">Hem</a></li>
+    <!-- RUBRIK -->
+    <section class="title-box">
+        <h1>FurEverHome</h1>
+        <p>A second chance, A forever home</p>
+    </section>
 
-                <li>
-                    <a href="#">Om Oss</a>
-                    <ul>
-                        <li><a href="#">Kontakt</a></li>
-                        <li><a href="#">Medarbetare</a></li>
-                        <li><a href="#">Vår Verksamhet</a></li>
-                    </ul>
-                </li>
+    <!-- HUVUDMENY -->
+    <nav class="mainmenu">
+        <ul>
+            <li><a href="#">Hem</a></li>
 
-                <li>
-                    <a href="#">Adoption</a>
-                    <ul>
-                        <li><a href="#">Hundar i behov av nytt hem</a></li>
-                        <li><a href="#">Adoptionsprocess</a></li>
-                        <li><a href="#">Intresseanmälan</a></li>
-                    </ul>
-                </li>
+            <li>
+                <a href="#">Om Oss</a>
+                <ul class="dropdown">
+                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#">Medarbetare</a></li>
+                    <li><a href="#">Vår Verksamhet</a></li>
+                </ul>
+            </li>
 
-                <li>
-                    <a href="#">Stöd Oss</a>
-                    <ul>
-                        <li><a href="#">Volontärer</a></li>
-                        <li><a href="#">Donationer</a></li>
-                    </ul>
-                </li>
+            <li>
+                <a href="#">Fotoalbum</a>
+            </li>
 
-                <li><a href="#">Fotoalbum</a></li>
+            <li>
+                <a href="#">Adoptera</a>
+                <ul class="dropdown">
+                    <li><a href="#">Hundar i behov</a></li>
+                    <li><a href="#">Adoptionsprocess</a></li>
+                    <li><a href="#">Intresseanmälan</a></li>
+                </ul>
+            </li>
 
-                <li><a href="#">Nyheter</a></li>
-            </ul>
-        </nav>
+            <li>
+                <a href="#">Stöd Oss</a>
+                <ul class="dropdown">
+                    <li><a href="#">Volontärer</a></li>
+                    <li><a href="#">Donationer</a></li>
+                </ul>
+            </li>
 
-        <!--sökruta-->
-        <!--action # pga ej funktionell-->
-        <form class="sokruta" role="search" action="#" aria-label="Sök på sidan">
-            <label for="search">Sök på sidan</label>
-            <input id="search" type="search" placeholder="infoga text här..." aria-label="Sök">
-            <button type="submit">Sök</button>
-        </form>
-    </header>
+            <li><a href="#">Nyheter</a></li>
+        </ul>
+    </nav>
+
+    <!-- SÖKRUTA -->
+    <form class="sokruta" action="#" role="search">
+        <input type="search" placeholder="Sök här...">
+        <button type="submit">Sök</button>
+    </form>
+
+</header>
     
     <!--huvuddel-->
     <main>

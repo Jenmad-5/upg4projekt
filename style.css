@@ -1,36 +1,143 @@
-
-header {
-overflow: hidden;
-background: white;
-padding: 12px 0;
+/* ========= HEADER BAKGRUND ========= */
+.header {
+    background-image: url("images/bakgrundsbild.png");
+    background-size: cover;
+    background-position: center;
+    border: 5px solid rgb(63, 11, 48);
+    padding: 40px 20px 20px;
+    text-align: center;
+    position: relative;
 }
 
-
-.sokruta label {
-display: none;
+/* ========= LOGO ========= */
+.logo img {
+    width: 95px;
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    border: 3px solid black;
+    background: white;
 }
 
+/* ========= SPRÅKVAL ========= */
+.lang a {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    padding: 10px 14px;
+    border: 3px solid black;
+    background: white;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+/* ========= TITEL I OVAL ========= */
+.title-box {
+    display: inline-block;
+    background: white;
+    border: 3px solid black;
+    padding: 25px 40px;
+    border-radius: 50% / 40%;
+    margin-top: 30px;
+}
+
+.title-box h1 {
+    margin: 0;
+    font-size: 34px;
+}
+
+.title-box p {
+    margin: 5px 0 0;
+    font-style: italic;
+    font-size: 18px;
+}
+
+/* ========= HUVUDMENY ========= */
+.mainmenu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+    margin-top: 30px;
+    background: rgb(244, 209, 241);
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+}
+
+.mainmenu li {
+    position: relative;
+}
+
+.mainmenu > ul > li > a {
+    display: block;
+    background: white;
+    border: 3px solid black;
+    padding: 10px 22px;
+    margin: 0 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+
+.mainmenu > ul > li > a:hover {
+    background: rgb(175, 175, 242);
+}
+
+/* ========= DROPDOWNS ========= */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    background: white;
+    border: 3px solid black;
+    z-index: 10;
+}
+
+.dropdown li a {
+    display: block;
+    padding: 10px 16px;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+    color: black;
+}
+
+.dropdown li a:hover {
+    background: #ebf2ff;
+}
+
+.mainmenu li:hover .dropdown {
+    display: block;
+}
+
+/* ========= SÖKRUTA ========= */
+.sokruta {
+    margin: 25px auto 0;
+    display: flex;
+    width: 420px;
+    max-width: 85%;
+    border: 3px solid black;
+    border-radius: 6px;
+    background: white;
+    overflow: hidden;
+}
 
 .sokruta input {
-flex: 1;
-padding: 10px 12px;
-border: none;
-outline: none;
-font-size: 16px;
+    flex: 1;
+    padding: 10px 14px;
+    border: none;
+    font-size: 16px;
 }
-
 
 .sokruta button {
-background: #98a2b0;
-color: white;
-padding: 10px 16px;
-border: none;
-font-size: 18px;
-cursor: pointer;
+    background: #98a2b0;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    font-size: 18px;
 }
-
 
 .sokruta button:hover {
-background: #ac3db6;
+    background: #ac3db6;
 }
-</style>
