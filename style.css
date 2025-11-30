@@ -157,8 +157,6 @@ main h2 {
 
 /* Runda hundbilder i nyhetslistan */
 article img {
-    display: flex;
-    align-items: flex-start;
     width: 80px;
     height: 80px;
     object-fit: cover;
