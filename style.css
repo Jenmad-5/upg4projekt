@@ -57,14 +57,17 @@ header nav[aria-label] a {
     font-weight: bold;
 }
 
-header h1 {
+.huvudrubrik {
     background: white;
     display: inline-block;
     padding: 20px 40px;
     border-radius: 50px;  /* Oval bubbla */
-    font-size: 32px;
     margin: 0;
     border: 3px solid black;
+}
+
+header h1 {
+    font-size: 32px;
 }
 
 header p {
