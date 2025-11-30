@@ -6,129 +6,137 @@
     <title>FurEverHome</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <a href="index.html">
-        <img src="images/logo.png" alt="Fureverhome logotyp"/>
+
+<header>
+
+    <!-- Logotyp -->
+    <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Fureverhome logotyp">
     </a>
-        <nav aria-label="Välj språk">
-            <a href="english.html" aria-current="page">English</a>
-        </nav>
 
-                <h1>FurEverHome</h1>
-        <p>A second chanse, A forever home</p>
+    <!-- English-knapp -->
+    <nav aria-label="Välj språk" class="lang-button">
+        <a href="english.html">English</a>
+    </nav>
 
-<nav>
-  <ul>
-    <li><a href="#">Hem</a>
-        <li><a href="#">Om oss</a>
-          <ul>
-            <li><a href="#">Kontakt</a></li>
-            <li><a href="#">Medarbetare</a></li>
-            <li><a href="#">Vår verksamhet</a></li>
-          </ul>
-        </li>
-        <li><a href="#">Fotoalbum</a></li>
-        <li><a href="#">Adoptera</a>
-          <ul>
-            <li><a href="#">Våra hundar</a></li>
-            <li><a href="#">Adoptionsprocess</a></li>
-          </ul>
-        </li>
+    <!-- Titel / tagline i oval -->
+    <h1>FurEverHome</h1>
+    <p>A second chance, A forever home</p>
 
-        <li><a href="#">Stöd oss</a>
-          <ul>
-            <li><a href="#">Volontärer</a></li>
-            <li><a href="#">Donationer</a></li>
-          </ul>
-        </li>
+    <!-- HUVUDMENY -->
+    <nav class="main-menu">
+        <ul>
+            <li><a href="#">Hem</a></li>
 
-        <li><a href="#">Nyheter</a></li>
-      </ul>
-    </li>
-    </header>
+            <li>
+                <a href="#">Om oss</a>
+                <ul>
+                    <li><a href="#">Kontakt</a></li>
+                    <li><a href="#">Medarbetare</a></li>
+                    <li><a href="#">Vår verksamhet</a></li>
+                </ul>
+            </li>
 
-    <main>
-        <section>
-            <h2>FurEverHome</h2>
-            <p>FurEverHome är en ideel organisation som räddar hemlösa hundar, ger dem vetrinärvård och förbereder dem för sitt nya hem. Vi arbetar för hållbara adoptioner och omsorg i varje steg</p>
-        </section>
-        <!--alternativt senaste nytt:-->
-        <section>
-            <h3> Aktuta hundar</h3>
-            <a href="#">Se alla hundar</a>
+            <li><a href="#">Fotoalbum</a></li>
+
+            <li>
+                <a href="#">Adoptera</a>
+                <ul>
+                    <li><a href="#">Våra hundar</a></li>
+                    <li><a href="#">Adoptionsprocess</a></li>
+                </ul>
+            </li>
+
+            <li>
+                <a href="#">Stöd oss</a>
+                <ul>
+                    <li><a href="#">Volontärer</a></li>
+                    <li><a href="#">Donationer</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Nyheter</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<main>
+
+    <!-- Sektion: Aktuella nyheter -->
+    <section>
+        <h2>Aktuella nyheter</h2>
+
         <article>
-            <h4>Teddys första hem</h4>
-            <img src="images/exempelbild.jpg" alt="Bild på teddy">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <img src="images/exempelbild.jpg" alt="Bild på Leo">
+            <div>
+                <h4>Leo:s första veterinärbesök</h4>
+                <p>Lorem ipsum dolor sit amet, ametex ea commodo consequat. Lorem ipsum dolor sit ametex ea commodo consequat.</p>
+            </div>
         </article>
 
         <article>
-            <h4>Luna påväg till sverige</h4>
-            <img src="images/exempelbild.jpg" alt="Bild på Luna">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus feugiat, justo vitae condimentum facilisis, ligula sapien sagittis urna, at porta enim libero non libero. Integer vulputate, tortor a fermentum sollicitudin, ipsum sapien cursus velit, id egestas erat mi id neque. In suscipit arcu ac lorem eleifend, at molestie nisi feugiat.
-            </p>
+            <img src="images/exempelbild.jpg" alt="Bild på Nala">
+            <div>
+                <h4>Nala är adopterad</h4>
+                <p>Lorem ipsum dolor sit amet, ametex ea commodo consequat. Lorem ipsum dolor sit ametex ea commodo consequat.</p>
+            </div>
+        </article>
+    </section>
+
+    <!-- Alternativ sektion -->
+    <section>
+        <h3>Senaste nytt</h3>
+        <a href="#">Se alla nyheter</a>
+
+        <article>
+            <h4>Nyhet</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </article>
 
         <article>
-            <h4>Bella har hittat hem</h4>
-            <img src="images/exempelbild.jpg" alt="Bild på Bella">
-            <p>Bella adopterades efter ett lyckat hembesök. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </p>
+            <h4>Nyhet</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </article>
 
         <article>
-            <h4>Milo</h4>
-            <img src="images/exempelbild.jpg" alt="Bild på milo">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <h4>Nyhet</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         </article>
-        </section>
+    </section>
 
-        <section>
-            <h3>Senaste nytt</h3>
-            <a href="#">Se alla nyheter</a>
-            <article>
-                <h4> nyhet</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </article>
-            <h4>nyhet</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </article>
-            <article>
-                <h4>nyhet</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </article>
-        </section>
-    </main>
+</main>
 
-    <footer>
-        <h4>Kontakt</h4>
-        <address>
-            FurEverHome
-            Adressgata 12
-            123 45 supportavdelning
-            Telefon: +46 70-123 45 67
-            E-post: kontakt@fureverhome.exempel
-        </address>
+<footer>
+    <h4>Kontakt</h4>
+    <address>
+        FurEverHome<br>
+        Adressgata 12<br>
+        123 45 Supportavdelning<br>
+        Telefon: +46 70-123 45 67<br>
+        E-post: kontakt@fureverhome.exempel
+    </address>
 
-        <h4>Sociala medier</h4>
-        <a href="https://www.instagram.com/instagram?igsh=MXhjM3Zza2RkbTNiMw==" target="_blank">
-            <img src="images/instagram.jpg" alt="instagram">
-        </a>
-        <a href="https://www.facebook.com/facebook" target="_blank">
-            <img src="images/facebook.png" alt="facebook">
-        </a>
-        <a href="https://www.tiktok.com/@tiktok?_r=1&_t=ZN-91osZUhaU8U" target="_blank">
-            <img src="images/tiktok.png" alt="tiktok">
-        </a>
+    <h4>Sociala medier</h4>
+    <a href="https://www.instagram.com" target="_blank">
+        <img src="images/instagram.jpg" alt="instagram">
+    </a>
+    <a href="https://www.facebook.com" target="_blank">
+        <img src="images/facebook.png" alt="facebook">
+    </a>
+    <a href="https://www.tiktok.com" target="_blank">
+        <img src="images/tiktok.png" alt="tiktok">
+    </a>
 
-        <h4>Snabblänkar</h4>
-        <a href="#">Om oss</a>
-        <a href="#">FAQ</a>
-        <a href="#">Adoptera</a>
-        <a href="#">Engagera dig</a>
-        <a href="#">Regler och villkor</a>
-     </footer>
-    
+    <h4>Snabblänkar</h4>
+    <a href="#">Om oss</a>
+    <a href="#">FAQ</a>
+    <a href="#">Adoptera</a>
+    <a href="#">Engagera dig</a>
+    <a href="#">Regler och villkor</a>
+</footer>
+
 </body>
 </html>
