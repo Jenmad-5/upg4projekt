@@ -1,8 +1,12 @@
 .logo
 .lang-button
-.ftr-kontakt
-.ftr-socials
-.ftr-snabblank
+#ftr-kontakt
+#ftr-socials
+#ftr-snabblank
+.huvudmeny
+#sokrutawrapper
+.sokruta
+#sektion2
 
 
 
@@ -21,10 +25,7 @@ body {
    HEADER
 ============================ */
 header {
-    background-image: url('images/header-bg.jpg'); /* Byt till din bakgrund */
-    background-size: cover;
-    background-position: center;
-    border: 6px solid #F6A86E;  /* Orange kant */
+    border: 6px solid rgb(99, 99, 228);  /* blå kant */
     text-align: center;
     padding: 20px 0 40px;
     position: relative;
@@ -33,7 +34,7 @@ header {
 /* Logotyp */
 header img {
     width: 100px;
-    border: 3px solid #2F7CE1; /* blå */
+    border: 3px solid black;
     background: white;
     padding: 5px;
     border-radius: 4px;
@@ -48,7 +49,7 @@ header nav[aria-label] a {
     top: 20px;
     right: 20px;
     background: white;
-    border: 3px solid #2F7CE1;
+    border: 3px solid black;
     padding: 5px 12px;
     border-radius: 4px;
     text-decoration: none;
@@ -63,7 +64,7 @@ header h1 {
     border-radius: 50px;  /* Oval bubbla */
     font-size: 32px;
     margin: 0;
-    border: 3px solid #2F7CE1;
+    border: 3px solid black;
 }
 
 header p {
@@ -81,9 +82,9 @@ nav > ul {
     margin: 20px auto 0;
     display: flex;
     justify-content: center;
-    background: #F6A86E;   /* orange bakgrundsband */
-    border-top: 4px solid #2F7CE1;
-    border-bottom: 4px solid #2F7CE1;
+    background: #bbe1f8;   /* babyblå bakgrundsband */
+    border-top: 4px ;
+    border-bottom: 4px;
 }
 
 nav ul li {
@@ -95,7 +96,7 @@ nav > ul > li > a {
     display: block;
     text-decoration: none;
     background: white;
-    border: 3px solid #2F7CE1;
+    border: 3px solid #481576;
     margin: 8px 10px;
     border-radius: 4px;
     color: #000;
@@ -116,7 +117,7 @@ nav ul ul {
     top: 60px;
     left: 0;
     background: white;
-    border: 3px solid #2F7CE1;
+    border: 3px solid black;
     padding: 0;
     z-index: 20;
 }
@@ -164,7 +165,7 @@ article img {
     height: 80px;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid #2F7CE1;
+    border: 1px solid black;
 }
 
 article h4 {
@@ -183,15 +184,16 @@ article p {
 }
 
 /* Sökfältet under huvudmenyn */
-.search-bar-wrapper {
+.sokrutawrapper {
     background: white;
     padding: 25px 0;
     display: flex;
     justify-content: center;
     border-bottom: 4px solid #2F7CE1;
+    
 }
 
-.search-bar {
+.sokruta{
     display: flex;
     width: 400px;
     max-width: 80%;
@@ -201,7 +203,7 @@ article p {
     background: white;
 }
 
-.search-bar input {
+.sokruta input {
     flex: 1;
     padding: 10px 12px;
     font-size: 16px;
@@ -209,7 +211,7 @@ article p {
     outline: none;
 }
 
-.search-bar button {
+.sokruta button {
     background: #2F7CE1;
     color: white;
     padding: 10px 14px;
@@ -218,8 +220,8 @@ article p {
     font-size: 18px;
 }
 
-.search-bar button:hover {
-    background: #1a53a5;
+.sokruta button:hover {
+    background: #ac3db6;
 }
 
 

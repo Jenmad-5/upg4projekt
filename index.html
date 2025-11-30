@@ -24,7 +24,7 @@
         <p>A second chance, a forever home</p>
 
         <!--huvudnav-->
-        <nav>
+        <nav class="huvudmeny">
             <ul>
                 <li><a href="#">Hem</a></li>
 
@@ -55,15 +55,18 @@
         </nav>
 
         <!--sökruta-->
-        <form action="">
+        <div class="sokrutawrapper">
+            <form class="sokruta">
             <input type="text" placeholder="Sökruta">
             <button type="submit">Sök</button>
         </form>
+        </div>
     </header>
 
     <main>
         <!--första sektionen, hundar-->
-        <section>
+        <div class="sektion1">
+            <section>
             <h2>Akuta hundar</h2>
             <a href="#">Se alla hundar</a>
 
@@ -85,9 +88,11 @@
                 <p>Lorem ipsum dolor sit amet, ametex ea commodo consequat. Lorem ipsum dolor sit ametex ea commodo consequat.</p>
             </article>
         </section>
+        </div>
 
         <!--andra sektionen, nyheter-->
-        <section>
+        <div class="sektion2">
+            <section>
             <h2>Senaste nytt</h2>
             <a href="#">Se alla nyheter</a>
 
@@ -106,6 +111,7 @@
                 <p>Lorem ipsum dolor sit amet, ametex ea commodo consequat. Lorem ipsum dolor sit ametex ea commodo consequat.</p>
             </article>
         </section>
+        </div>
     </main>
 
     <!--footer-->
