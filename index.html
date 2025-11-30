@@ -8,30 +8,28 @@
 </head>
 
 <body>
-    <div class="headcont">
     <header>
-        <!--klickbar logotyp-->
+        <!--klickbar logo-->
         <a href="index.html" class="logo">
             <img src="images/logo.png" alt="FurEverHome logotyp">
         </a>
 
-        <!--språkval engelska-->
-        <nav aria-label="Välj språk" class="lang-button">
+        <!--språkval-->
+        <nav aria-label="Välj språk" class="sprakval">
             <a href="#">English</a>
         </nav>
 
         <!--huvudrubrik med slogan-->
-        <div class="huvudrubrik">
         <h1>FurEverHome</h1>
         <p>A second chance, a forever home</p>
-        </div>
 
-        <!--huvudnav-->
-        <nav class="huvudmeny">
+        <!--huvudnavigation med rullgardinsmeny-->
+        <nav class="huvudmeny" aria-label="huvudmeny">
             <ul>
                 <li><a href="#">Hem</a></li>
 
-                <li><a href="#">Om Oss</a>
+                <li>
+                    <a href="#">Om Oss</a>
                     <ul>
                         <li><a href="#">Kontakt</a></li>
                         <li><a href="#">Medarbetare</a></li>
@@ -39,14 +37,17 @@
                     </ul>
                 </li>
 
-                <li><a href="#">Adoption</a>
+                <li>
+                    <a href="#">Adoption</a>
                     <ul>
-                        <li><a href="#">Hundar som söker nytt hem</a></li>
+                        <li><a href="#">Hundar i behov av nytt hem</a></li>
                         <li><a href="#">Adoptionsprocess</a></li>
+                        <li><a href="#">Intresseanmälan</a></li>
                     </ul>
                 </li>
 
-                <li><a href="#">Stöd oss</a>
+                <li>
+                    <a href="#">Stöd Oss</a>
                     <ul>
                         <li><a href="#">Volontärer</a></li>
                         <li><a href="#">Donationer</a></li>
@@ -56,103 +57,105 @@
                 <li><a href="#">Fotoalbum</a></li>
             </ul>
         </nav>
-    </div>
+
         <!--sökruta-->
-        <div class="sokrutawrapper">
-            <form class="sokruta">
-            <input type="text" placeholder="Sökruta">
+        <!--action # pga ej funktionell-->
+        <form class="sokruta" role="search" action="#" aria-label="Sök på sidan">
+            <label for="search">Sök på sidan</label>
+            <input id="search" type="search" placeholder="infoga text här..." aria-label="Sök">
             <button type="submit">Sök</button>
         </form>
-        </div>
     </header>
-
-
+    
+    <!--huvuddel-->
     <main>
-        <!--första sektionen, hundar-->
-        <div class="sektion1">
-            <section>
+
+        <!--sektion ett, hundar-->
+        <section>
             <h2>Akuta hundar</h2>
-            <a href="#" class="se-alla">Se alla hundar</a>
+            <a href="#">Se alla hundar</a>
 
-            <article class="akuthund">
-                <img src="images/exempelbild.jpg" alt="Bild på Leo">
-                <div class="hundinfo">
-                    <h3>Leo 3år</h3>
+            <article>
+                <img src="images/exempelbild.jpg" alt="Hund vid namn Leo">
+                <h3>Leo</h3>
                 <p>Lorem ipsum dolor sit amet, ametex ea commodo consequat. Lorem ipsum dolor sit ametex ea commodo consequat.</p>
-                </div>
-                
             </article>
 
-            <article class="akuthund">
-                <img src="images/exempelbild.jpg" alt="Bild på Nala">
-                <div class="hundinfo">
-                    <h3>Nala 6mån</h3>
+            <article>
+                <img src="images/exempelbild.jpg" alt="Hund vid namn Nala">
+                <h3>Nala</h3>
                 <p>Lorem ipsum dolor sit amet, ametex ea commodo consequat. Lorem ipsum dolor sit ametex ea commodo consequat.</p>
-                </div>
-                
             </article>
 
-            <article class="akuthund">
-                <img src="images/exempelbild.jpg" alt="Bild på Teddy">
-                <div class="hundinfo">
-                    <h3>Teddy 6år</h3>
+            <article>
+                <img src="images/exempelbild.jpg" alt="Hind vid namn Teddy">
+                <h3>Teddy</h3>
                 <p>Lorem ipsum dolor sit amet, ametex ea commodo consequat. Lorem ipsum dolor sit ametex ea commodo consequat.</p>
-                </div>
-                
             </article>
         </section>
-        </div>
 
-        <!--andra sektionen, nyheter-->
-        <div class="sektion2">
-            <section>
+        <!--sektion två, nyheter-->
+        <section>
             <h2>Senaste nytt</h2>
             <a href="#">Se alla nyheter</a>
 
             <article>
+                <img src="images/exempelbild.jpg" alt="bildtext">
                 <h3>Bobos första Jul</h3>
                 <p>Lorem ipsum dolor sit amet, ametex ea commodo consequat. Lorem ipsum dolor sit ametex ea commodo consequat.</p>
+                <p class="datum">dag/månad/år</p>
             </article>
 
             <article>
-                <h3>Lunas första riktiga hem</h3>
+                <img src="images/exempelbild.jpg" alt="bildtext">
+                <h3>Ninja adopterad</h3>
                 <p>Lorem ipsum dolor sit amet, ametex ea commodo consequat. Lorem ipsum dolor sit ametex ea commodo consequat.</p>
+                <p class="datum">dag/månad/år</p>
             </article>
 
             <article>
-                <h3>Jul Workshop</h3>
+                <img src="images/exempelbild.jpg" alt="bildtext">
+                <h3>Julworkshop</h3>
                 <p>Lorem ipsum dolor sit amet, ametex ea commodo consequat. Lorem ipsum dolor sit ametex ea commodo consequat.</p>
+                <p class="datum">dag/månad/år</p>
             </article>
         </section>
-        </div>
     </main>
 
     <!--footer-->
     <footer>
-        <div class="ftr-kontakt">
+        <!--kontaktuppgifter-->
+        <section class="foot-kontakt">
             <h4>Kontakt</h4>
-            <p>Tel: 0123456789</p>
-            <p>E-post: FEH@123.com</p>
-            <p>Adress: Djurgatan 1 123 45, Stockholm</p>
-        </div>
+            <address>
+                Tel: +46 70 123 45 67
+                E-post: <a href="mailto:fureverhome@123@example">fureverhome@123.exempel</a>
+                Adress: Djurgatan 1, 123 45 Stockholm 
+            </address>
+        </section>
 
-        <div class="ftr-socials">
+        <!--sociala medier-->
+        <section>
             <h4>Sociala medier</h4>
-            <a href="https://www.instagram.com/instagram?igsh=MXhjM3Zza2RkbTNiMw==" target="_blank"><img src="images/instagram.jpg" alt="Instagram"></a>
+            <a href="https://www.instagram.com/instagram?igsh=MXhjM3Zza2RkbTNiMw==" target="_blank">
+                <img src="images/instagram.jpg" alt="Besök oss på Instagram">
+            </a>
+            <a href="https://www.tiktok.com/@tiktok?_r=1&_t=ZN-91osZUhaU8U" target="_blank">
+                <img src="images/tiktok.png" alt="Besök oss på TikTok">
+            </a>
+            <a href="https://www.facebook.com/facebook" target="_blank">
+                <img src="images/facebook.png" alt="Besök oss på Facebook">
+            </a>
+        </section>
 
-            <a href="https://www.tiktok.com/@tiktok?_r=1&_t=ZN-91osZUhaU8U" target="_blank"><img src="images/tiktok.png" alt="Tiktok"></a>
-
-            <a href="https://www.facebook.com/facebook" target="_blank"><img src="images/facebook.png" alt="Facebook"></a>
-        </div>
-
-        <div class="ftr-snabblank">
-            <h4>Snabblänk</h4>
-            <a href="#">Om Oss</a>
-            <a href="#">Adoptera</a>
+        <!--snabblänkar-->
+        <section>
+            <h4>Snabblänkar</h4>
+            <a href="#">Om oss</a>
+            <a href="#">Adoption</a>
             <a href="#">Engagera dig</a>
             <a href="#">FAQ</a>
-        </div>
+        </section>
     </footer>
-    
 </body>
 </html>
