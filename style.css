@@ -1,207 +1,58 @@
+.sec-ett{ 
+    display: inline-block; 
+    margin: 10px; 
+    background-color: rgb(33, 139, 56); 
+    margin-bottom: 10px; 
+} 
 
-body {
-    font-family: Georgia, serif;
-    color: black;
-}
+.sec-ett h2{ 
+    display: flex; 
+    justify-content: center; 
+} 
 
-.header {
-    width: 100%;
-    text-align: center;
-    padding: 20px 0 0;
-    position: relative;
-}
+.sec-ett a{ 
+    display: flex; 
+    justify-content: center; 
+} 
 
-/* LOGO */
-.logo img {
-    width: 120px;
-    position: absolute;
-    top: 15px;
-    left: 25px;
-}
-
-/* Språk-knapp */
-.lang {
-    position: absolute;
-    top: 20px;
-    right: 25px;
-}
-
-.lang a {
-    padding: 6px 15px;
-    border: 2px solid #000;
-    background: #f7d4ef;
-    text-decoration: none;
-    color: #000;
-    border-radius: 6px;
-    font-size: 14px;
-}
-
-/* -----------------------------------------------------------
-   Titel-box
------------------------------------------------------------ */
-
-.title-box {
-    margin: 40px auto 20px;
-    width: fit-content;
-    background: #fff;
-    padding: 25px 60px;
-    border-radius: 40px;
-    border: 3px solid #000;
-    text-align: center;
-}
-
-.title-box h1 {
-    font-size: 42px;
-    margin-bottom: 5px;
-}
-
-.title-box p {
-    font-size: 18px;
-}
-
-/* -----------------------------------------------------------
-   HUVUDMENY
------------------------------------------------------------ */
-
-.mainmenu {
-    background: #edb7e5;
-    border-top: 3px solid black;
-    border-bottom: 3px solid black;
-    padding: 15px 0;
-}
-
-.mainmenu ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-.mainmenu > ul > li {
-    position: relative;
-}
-
-.mainmenu a {
-    text-decoration: none;
-    color: #000;
-    padding: 8px 18px;
-    background: #fff;
-    border: 2px solid #000;
-    border-radius: 6px;
-}
-
-.mainmenu ul .dropdown {
-    display: none; 
-    position: absolute;
-    top: 100%;       /* hamnar direkt under huvudknappen */
-    left: 0;
-    background: white;
-    border: 2px solid black;
-    padding: 0.5rem 0;
-    border-radius: 10px;
-    z-index: 100;
-}
-
-.mainmenu ul li:hover > .dropdown {
-    display: block;
-}
-
-.mainmenu ul li {
-    position: relative;
-}
-
-.mainmenu ul .dropdown li {
-    display: block;
-    padding: 5px 15px;
-    white-space: nowrap;
-}
-
-.mainmenu ul .dropdown li a {
-    display: block;
-}
-
-
-
-/* -----------------------------------------------------------
-   SÖKRUTA
------------------------------------------------------------ */
-
-.sokruta {
-    margin: 20px auto;
-    width: fit-content;
-}
-
-.sokruta input {
-    padding: 8px 12px;
-    border: 2px solid #000;
-    border-radius: 6px 0 0 6px;
-}
-
-.sokruta button {
-    padding: 8px 12px;
-    border: 2px solid #000;
-    border-left: none;
-    border-radius: 0 6px 6px 0;
-    background: #edb7e5;
-    cursor: pointer;
-}
-
-/* -----------------------------------------------------------
-   MAIN – Sektioner
------------------------------------------------------------ */
-
-main {
-    width: 90%;
-    margin: 40px auto;
-}
-
-main section {
-    margin-bottom: 50px;
-}
-
-main section h2 {
-    font-size: 28px;
-    margin-bottom: 10px;
-}
-
-main section > a {
-    display: inline-block;
-    margin-bottom: 20px;
-    text-decoration: none;
-    color: #7a2a6f;
-    font-weight: bold;
-}
-
-main article {
-    width: 30%;
-    background: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    border: 2px solid #000;
-    display: inline-block;
-    margin: 10px;
+.sec-ett article { 
+display: inline-block;        /* tillåter flera kort i rad och centrering */
     vertical-align: top;
+    width: 30%;                   /* tre i rad på större skärmar */
+    margin: 12px 1.5%;            /* mellanrum mellan korten */
+    background: #e61e1e;
+    border: 3px solid #000;
+    border-radius: 14px;
+    padding: 22px 18px;
+    box-sizing: border-box;
+    text-align: center;        
+} 
+
+.sec-ett img {
+    display: block;               /* viktig: block så margin auto funkar */
+    margin: 0 auto 14px auto;     /* centrerar och ger space under bilden */
+    width: 50%;                   /* justera storlek på bilden */
+    max-width: 160px;
+    height: auto;
+    border-radius: 50%;
 }
 
-main article img {
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 10px;
+
+
+/*sektion två*/
+.sec-tva{
+    margin: 25px;
+    background-color: blueviolet;
 }
 
-/* Datum i nyheter */
-.datum {
+/*datum för artiklarna*/
+.datum{
     font-size: 12px;
-    color: #555;
-    margin-top: 10px;
+    color: grey;
 }
 
-/* -----------------------------------------------------------
-   FOOTER
------------------------------------------------------------ */
-
-footer {
-    background: #edb7e5;
+/*footer*/
+footer{
     padding: 40px 20px;
     display: flex;
     justify-content: space-evenly;
@@ -209,23 +60,21 @@ footer {
     border-top: 3px solid black;
 }
 
-footer h4 {
-    margin-bottom: 10px;
-    font-size: 20px;
-}
-
 footer section {
     width: 25%;
 }
 
-.foot-sm img {
-    width: 40px;
-    margin-right: 10px;
+footer h4{
+    margin-bottom: 10px;
+    font-size: 20px;
 }
 
-.snabblank a,
-.foot-kontakt a {
+.hjalp-lank, .ftr-kontakt{
     display: block;
-    margin-bottom: 6px;
-    color: #000;
+    margin-bottom: 8px;
 }
+
+.socialamedier img{
+    width: 45px;
+}
+
