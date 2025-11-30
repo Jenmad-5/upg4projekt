@@ -189,7 +189,7 @@ article p {
     padding: 25px 0;
     display: flex;
     justify-content: center;
-    border-bottom: 4px solid #2F7CE1;
+    border-bottom: 4px solid #e12fc0;
 
 }
 
@@ -197,7 +197,7 @@ article p {
     display: flex;
     width: 400px;
     max-width: 80%;
-    border: 3px solid #2F7CE1;
+    border: 3px solid black;
     border-radius: 6px;
     overflow: hidden;
     background: white;
@@ -212,7 +212,7 @@ article p {
 }
 
 .sokruta button {
-    background: #2F7CE1;
+    background: #112540;
     color: white;
     padding: 10px 14px;
     border: none;
