@@ -1,4 +1,11 @@
 
+.logo
+.sparkval
+.datum
+
+
+
+
 
 
 .headcont {
@@ -55,13 +62,8 @@ header nav[aria-label] a {
     font-weight: bold;
 }
 
-.huvudrubrik {
-    background-color: white;
-    display: inline-block;
+.huvudrubrik {  
     padding: 20px 40px;
-    border-radius: 50px;  /* Oval bubbla */
-    margin: 0;
-    border: 3px solid black;
 }
 
 header h1 {
