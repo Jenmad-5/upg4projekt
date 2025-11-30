@@ -150,20 +150,15 @@ main {
     padding: 20px;
 }
 
-main h2, main h3 {
+main h2 {
     text-align: center;
     font-size: 28px;
 }
 
-article {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    margin: 25px 0;
-}
-
 /* Runda hundbilder i nyhetslistan */
 article img {
+    display: flex;
+    align-items: flex-start;
     width: 80px;
     height: 80px;
     object-fit: cover;
