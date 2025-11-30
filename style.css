@@ -1,3 +1,125 @@
+/* ====== LOGO ====== */
+#logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+#logo img {
+    width: 120px;
+    height: auto;
+}
+
+.wrapper{
+    background-image: url(images/bakgrundsbild.png);
+}
+
+/* ====== SPRÅKVAL – "ENGLISH" ====== */
+.eng {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.eng a {
+    display: inline-block;
+    padding: 8px 14px;
+    background: white;
+    border: 3px solid #2a59a5;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+
+/* ====== TITEL + SLOGAN ====== */
+.title-cont {
+    width: 100%;
+    text-align: center;
+
+    /* Skapar oval form */
+    background: white;
+    padding: 20px 50px;
+    border-radius: 50px;
+
+    /* Placera den i toppen, centrerad */
+    position: relative;
+    margin: 40px auto 20px auto;
+    max-width: 700px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.title-cont h1 {
+    font-size: 36px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.title-cont p {
+    font-size: 18px;
+    margin: 5px 0 0 0;
+}
+
+
+/*huvudmeny*/
+.huvudmeny {
+    background: #edb7e5;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    padding: 15px 0;
+}
+
+.huvudmeny ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.huvudmeny > ul > li {
+    position: relative;
+}
+
+.huvudmeny a {
+    text-decoration: none;
+    color: #000;
+    padding: 8px 18px;
+    background: #fff;
+    border: 2px solid #000;
+    border-radius: 6px;
+}
+
+.huvudmeny ul .rullgardin {
+    display: none; 
+    position: absolute;
+    top: 100%;       /* hamnar direkt under huvudknappen */
+    left: 0;
+    background: white;
+    border: 2px solid black;
+    padding: 0.5rem 0;
+    border-radius: 10px;
+    z-index: 100;
+}
+
+.huvudmeny ul li:hover > .rullgardin {
+    display: block;
+}
+
+.huvudmeny ul li {
+    position: relative;
+}
+
+.huvudmeny ul .rullgardin li {
+    display: block;
+    padding: 5px 15px;
+    white-space: nowrap;
+}
+
+.huvudmeny ul .rullgardin li a {
+    display: block;
+}
+/*sektion 1*/
 .sec-ett{ 
     display: inline-block; 
     margin: 10px; 
@@ -41,9 +163,50 @@ display: inline-block;        /* tillåter flera kort i rad och centrering */
 
 /*sektion två*/
 .sec-tva{
-    margin: 25px;
-    background-color: blueviolet;
+    background-color: purple;   /* bara exempel, behåll din egen färg */
+    padding: 20px;
+    text-align: center; /* centrerar rubrik + länk */
 }
+
+.sec-tva article img {
+    width: 100%;                    /* styr bildstorlek */
+    max-width: 280px;               /* valfri maxbredd */
+    display: block;
+    margin: 0 auto 15px auto;       /* centrera bild */
+}
+
+.sec-tva .sec-text { 
+    flex: 1;
+} 
+
+.sec-tva span {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.sec-tva h2{
+    display: flex; 
+    justify-content: center; 
+}
+
+.sec-tva a{ 
+    display: flex; 
+    justify-content: center; 
+    margin-bottom: 30px;
+} 
+
+/* ----- Artiklar i rad ----- */
+.sec-tva article {
+    width: 22%;                     /* fyra i rad */
+    display: inline-block;          /* placera bredvid varandra */
+    vertical-align: top;            /* top-align */
+    margin: 0 1%;                   /* avstånd mellan artiklar */
+    text-align: center;             /* centrera innehållet */
+}
+
+
 
 /*datum för artiklarna*/
 .datum{
@@ -52,29 +215,68 @@ display: inline-block;        /* tillåter flera kort i rad och centrering */
 }
 
 /*footer*/
-footer{
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;   /* Tre lika stora kolumner */
+    align-items: start;
     padding: 40px 20px;
-    display: flex;
-    justify-content: space-evenly;
-    gap: 40px;
-    border-top: 3px solid black;
+    text-align: left;
 }
 
+/* Varje sektion staplar sitt innehåll lodrätt */
 footer section {
-    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-footer h4{
-    margin-bottom: 10px;
-    font-size: 20px;
+/* --- CENTRERA SIDOKOLUMNERNA --- */
+
+/* Vänster sektion */
+.ftr-kontakt {
+    justify-self: start;
 }
 
-.hjalp-lank, .ftr-kontakt{
-    display: block;
-    margin-bottom: 8px;
+/* Mittensektionen – helt centrerad */
+.socialamedier {
+    justify-self: center;
+    align-items: center;  /* centrerar ikon-raden under rubriken */
 }
 
-.socialamedier img{
-    width: 45px;
+/* Höger sektion */
+.hjalp-lank {
+    justify-self: end;
 }
 
+/* Kontaktinfo snyggt lodrätt */
+footer .ftr-kontakt address {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+}
+
+/* Ikonerna i mittensektionen */
+footer .socialamedier img {
+    width: 40px;
+    height: auto;
+    margin-right: 6px;
+}
+
+footer .socialamedier a:last-child img {
+    margin-right: 0;
+}
+
+/* Snabblänkar */
+footer .hjalp-lank a {
+    text-decoration: none;
+    color: #2a59a5;
+    margin-bottom: 5px;
+}
+
+footer .hjalp-lank a:hover {
+    text-decoration: underline;
+}
+
+
+{}
