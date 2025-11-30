@@ -170,9 +170,58 @@ article p {
 /* ============================
    FOOTER
 ============================ */
-footer {
+/* ============================
+   FOOTER – 3 kolumner som i storyboard
+============================ */
+
+.footer {
+    background: #E7FFF0; /* ljus grön */
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
     border-top: 4px solid #2F7CE1;
-    text-align: center;
-    padding: 40px 0;
-    font-size: 20px;
+    font-size: 16px;
 }
+
+.footer-column {
+    flex: 1;
+}
+
+.footer-column h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer-column p {
+    margin: 5px 0;
+}
+
+.footer-column a {
+    display: block;
+    margin: 4px 0;
+    color: #0060C9;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+/* Sociala medier – centrerade ikoner */
+.footer-column.center {
+    text-align: center;
+}
+
+.footer-column.center img {
+    width: 50px;
+    margin: 8px 0;
+}
+
+/* Höger kolumn har högerjusterad text (som på bilden) */
+.footer-column.right {
+    text-align: right;
+}
+
