@@ -188,10 +188,7 @@ article p {
     background: white;
     padding: 25px 0;
     display: flex;
-    justify-content: center;
-    border-bottom: 1px solid #e12fc0;
-
-}
+    justify-content: center;}
 
 .sokruta{
     display: flex;
