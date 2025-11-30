@@ -173,35 +173,46 @@ article p {
     align-items: center;
 }
 
-/* Form-ramar i samma stil som knapparna */
-.search-form {
-    display: flex;
-    border: 3px solid #2F7CE1;
-    border-radius: 4px;
+/* Sökfältet under huvudmenyn */
+.search-bar-wrapper {
     background: white;
+    padding: 25px 0;
+    display: flex;
+    justify-content: center;
+    border-bottom: 4px solid #2F7CE1;
+}
+
+.search-bar {
+    display: flex;
+    width: 400px;
+    max-width: 80%;
+    border: 3px solid #2F7CE1;
+    border-radius: 6px;
     overflow: hidden;
+    background: white;
 }
 
-.search-form input {
+.search-bar input {
+    flex: 1;
+    padding: 10px 12px;
+    font-size: 16px;
     border: none;
-    padding: 8px 10px;
-    font-size: 14px;
     outline: none;
-    width: 140px;
 }
 
-.search-form button {
-    border: none;
+.search-bar button {
     background: #2F7CE1;
     color: white;
-    padding: 8px 12px;
+    padding: 10px 14px;
+    border: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
 }
 
-.search-form button:hover {
+.search-bar button:hover {
     background: #1a53a5;
 }
+
 
 
 /* ============================
