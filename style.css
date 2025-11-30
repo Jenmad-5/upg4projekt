@@ -27,7 +27,7 @@ body {
 header {
     border: 6px solid rgb(99, 228, 129);  /* blå kant */
     text-align: center;
-    padding: 20px 0 40px;
+    padding: 20px 0 20px;
     position: relative;
 }
 
