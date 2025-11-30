@@ -1,21 +1,8 @@
-/* -----------------------------------------------------------
-   Globalt
------------------------------------------------------------ */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 body {
     font-family: Georgia, serif;
-    background: #fdeedd;
-    color: #111;
+    color: black;
 }
-
-/* -----------------------------------------------------------
-   HEADER
------------------------------------------------------------ */
 
 .header {
     width: 100%;
@@ -87,7 +74,7 @@ body {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 35px;
+    gap: 30px;
 }
 
 .mainmenu > ul > li {
@@ -101,34 +88,39 @@ body {
     background: #fff;
     border: 2px solid #000;
     border-radius: 6px;
-    display: inline-block;
 }
 
-/* DROPDOWN-MENY */
-
-.dropdown {
-    display: none;
+.mainmenu ul .dropdown {
+    display: none; 
     position: absolute;
-    top: 45px;
+    top: 100%;       /* hamnar direkt under huvudknappen */
     left: 0;
-    background: #fff;
-    border: 2px solid #000;
-    border-radius: 6px;
-    padding: 10px 0;
-    width: 180px;
+    background: white;
+    border: 2px solid black;
+    padding: 0.5rem 0;
+    border-radius: 10px;
+    z-index: 100;
 }
 
-.dropdown li a {
-    background: none;
-    border: none;
-    padding: 10px 15px;
-    width: 100%;
+.mainmenu ul li:hover > .dropdown {
     display: block;
 }
 
-.mainmenu li:hover .dropdown {
+.mainmenu ul li {
+    position: relative;
+}
+
+.mainmenu ul .dropdown li {
+    display: block;
+    padding: 5px 15px;
+    white-space: nowrap;
+}
+
+.mainmenu ul .dropdown li a {
     display: block;
 }
+
+
 
 /* -----------------------------------------------------------
    SÖKRUTA
